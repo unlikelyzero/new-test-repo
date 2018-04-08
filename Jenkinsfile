@@ -9,6 +9,7 @@ pipeline {
     stage('Deploy Test Environment') {
       steps {
         echo 'I\'m Testing!'
+        sleep 3
       }
     }
     stage('UI Test') {
@@ -16,6 +17,7 @@ pipeline {
         stage('Test') {
           steps {
             echo 'I\'m Testing!'
+            sleep 3
           }
         }
         stage('IE11') {
@@ -39,6 +41,7 @@ pipeline {
     stage('Deploy Production') {
       steps {
         echo 'Deploy'
+        sleep 3
       }
     }
     stage('Test Prod') {
