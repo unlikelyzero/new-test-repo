@@ -23,7 +23,7 @@ pipeline {
         stage('IE11') {
           steps {
             echo 'Testing IE11'
-            sh 'exit 0'
+            sh 'exit 1'
           }
         }
         stage('Chrome') {
